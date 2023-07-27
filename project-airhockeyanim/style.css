@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(230, 202, 168);
+    position: relative;
+}
+.box{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: blue;
+    border: 2px solid black;
+    animation-name: boxone;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-delay: 0.7s;
+    /* animation-play-state: running; */
+}
+@keyframes boxone{
+    from{
+        top: 0;
+        left: 50px;
+    }
+    to{
+        top: 0;
+        left: 1350px;
+    }
+}
+.box2{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: blue;
+    bottom: 0;
+    border: 2px solid black;
+    animation-name: boxtwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-delay: 1.3s;
+    /* animation-play-state: running; */
+}
+@keyframes boxtwo{
+    from{
+        bottom: 0;
+        left: 50px;
+    }
+    to{
+        bottom: 0;
+        left: 1350px;
+    }
+}
+.ball{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 800px;
+    border-radius: 50%;
+    top: 350px;
+    background-color: black;
+    animation: ballmmt 2s linear 3s infinite alternate-reverse;
+}
+/* @keyframes ballmmt {
+    from{
+        top: 60px;
+        left: 300px;
+    }
+    to{
+        top: 700px;
+        left: 500px;
+    }
+} */
+@keyframes ballmmt {
+    from{
+        top: 7%;
+        left: 18%;
+    }
+    to{
+        top: 83%;
+        left: 80%;
+    }
+}
